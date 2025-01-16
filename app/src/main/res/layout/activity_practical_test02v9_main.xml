@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/word_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduceți cuvântul" />
+
+    <EditText
+        android:id="@+id/min_length_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Introduceți lungimea minimă" />
+
+    <Button
+        android:id="@+id/fetch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obține anagrame" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rezultatul va apărea aici"
+        android:paddingTop="16dp" />
+</LinearLayout>
