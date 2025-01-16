@@ -4,11 +4,12 @@ plugins {
 
 android {
     namespace = "ro.pub.cs.systems.eim.practicaltest02v9"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ro.pub.cs.systems.eim.practicaltest02v9"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -32,7 +33,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.play.services.maps.v1810)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
